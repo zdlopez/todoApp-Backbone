@@ -5,11 +5,20 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
   </head>
   <body>
+    <header id="header">
+      <h1>Zach's Todo's</h1>
+      <input id="new-todo" placeholder="What do you need to do?" autofocus>
+    </header>
     <div class="container">
+      <input id="toggle-all" type="checkbox">
+      <label for="toggle-all">Mark all complete</label>
+      <ul id="todo-list"></ul>
     </div>
     <script src="node_modules/backbone/backgone-min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/underscore/underscore-min.js"></script>
+    <script src="node_modules/backbone-localstorage/backbone-localstorage.min.js"></script>
+
 
   </body>
 </html>
